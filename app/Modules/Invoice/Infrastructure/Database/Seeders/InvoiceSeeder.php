@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Modules\Invoices\Infrastructure\Database\Seeders;
+namespace App\Modules\Invoice\Infrastructure\Database\Seeders;
 
 use App\Domain\Enums\StatusEnum;
 use Faker\Factory;
@@ -34,6 +34,7 @@ class InvoiceSeeder extends Seeder
                 'date' => $faker->date(),
                 'due_date' => $faker->date(),
                 'company_id' => $companies->random()->id,
+                'billed_company_id' => $companies->random()->id,
                 'status' => StatusEnum::cases()[array_rand(StatusEnum::cases())],
                 'created_at' => now(),
                 'updated_at' => now(),

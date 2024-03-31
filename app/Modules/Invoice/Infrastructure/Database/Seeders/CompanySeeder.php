@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Modules\Invoices\Infrastructure\Database\Seeders;
+namespace App\Modules\Invoice\Infrastructure\Database\Seeders;
 
 use Faker\Factory;
 use Illuminate\Database\Seeder;

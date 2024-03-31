@@ -8,7 +8,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Name
+    | Api Name
     |--------------------------------------------------------------------------
     |
     | This value is the name of your application. This value is used when the
@@ -21,7 +21,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Environment
+    | Api Environment
     |--------------------------------------------------------------------------
     |
     | This value determines the "environment" your application is currently
@@ -34,7 +34,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Debug Mode
+    | Api Debug Mode
     |--------------------------------------------------------------------------
     |
     | When your application is in debug mode, detailed error messages with
@@ -47,7 +47,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application URL
+    | Api URL
     |--------------------------------------------------------------------------
     |
     | This URL is used by the console to properly generate URLs when using
@@ -62,7 +62,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Timezone
+    | Api Timezone
     |--------------------------------------------------------------------------
     |
     | Here you may specify the default timezone for your application, which
@@ -75,7 +75,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Locale Configuration
+    | Api Locale Configuration
     |--------------------------------------------------------------------------
     |
     | The application locale determines the default locale that will be used
@@ -88,7 +88,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Fallback Locale
+    | Api Fallback Locale
     |--------------------------------------------------------------------------
     |
     | The fallback locale determines the locale to use when the current one
@@ -189,11 +189,10 @@ return [
          */
 
         /*
-         * Application Service Providers...
+         * Api Service Providers...
          */
         App\Infrastructure\Providers\AppServiceProvider::class,
         App\Infrastructure\Providers\AuthServiceProvider::class,
-        // App\Infrastructure\Providers\BroadcastServiceProvider::class,
         App\Infrastructure\Providers\EventServiceProvider::class,
         App\Infrastructure\Providers\RouteServiceProvider::class,
 
@@ -201,6 +200,7 @@ return [
          * Modules Service Providers
          */
         App\Modules\Approval\Infrastructure\Providers\ApprovalsServiceProvider::class,
+        App\Modules\Invoice\Infrastructure\Providers\InvoiceServiceProvider::class,
     ],
 
     /*
